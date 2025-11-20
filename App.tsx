@@ -10,6 +10,7 @@ import Footer from './components/Footer';
 import ReactLazy from 'react';
 const Home = ReactLazy.lazy(() => import('./pages/Home'));
 const Services = ReactLazy.lazy(() => import('./pages/Services'));
+const Resources = ReactLazy.lazy(() => import('./pages/Resources'));
 const DigitalTransformation = ReactLazy.lazy(() => import('./pages/services/DigitalTransformation'));
 const AgileCoaching = ReactLazy.lazy(() => import('./pages/services/AgileCoaching'));
 const SoftwareCraftsmanship = ReactLazy.lazy(() => import('./pages/services/SoftwareCraftsmanship'));
@@ -53,6 +54,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/services" element={<Services />} />
+            <Route path="/resources" element={<Resources />} />
             <Route path="/services/digital-transformation" element={<DigitalTransformation />} />
             <Route path="/services/agile-coaching" element={<AgileCoaching />} />
             <Route path="/services/software-craftsmanship" element={<SoftwareCraftsmanship />} />

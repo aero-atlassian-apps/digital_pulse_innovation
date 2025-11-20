@@ -4,6 +4,7 @@ export const resources = {
       nav: {
         home: "Home",
         services: "Services",
+        resources: "Resources",
         about: "About Us",
         clients: "Clients & Cases",
         team: "Team",
@@ -105,6 +106,7 @@ export const resources = {
       nav: {
         home: "Accueil",
         services: "Services",
+        resources: "Ressources",
         about: "À Propos",
         clients: "Clients & Cas",
         team: "Équipe",
@@ -206,6 +208,7 @@ export const resources = {
       nav: {
         home: "Inicio",
         services: "Servicios",
+        resources: "Recursos",
         about: "Nosotros",
         clients: "Clientes",
         team: "Equipo",
@@ -307,6 +310,7 @@ export const resources = {
       nav: {
         home: "الرئيسية",
         services: "خدماتنا",
+        resources: "الموارد",
         about: "من نحن",
         clients: "العملاء",
         team: "الفريق",

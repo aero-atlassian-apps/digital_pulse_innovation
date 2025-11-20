@@ -31,7 +31,13 @@ const Services: React.FC = () => {
           { "@context": "https://schema.org", "@type": "Service", "name": "Innovation Strategy", "provider": { "@type": "Organization", "name": "Digital Pulse Innovation" }, "serviceType": "Consulting", "areaServed": "Global", "url": window.location.origin + '/services/innovation-strategy' },
           { "@context": "https://schema.org", "@type": "Service", "name": "Training & Academy", "provider": { "@type": "Organization", "name": "Digital Pulse Innovation" }, "serviceType": "Consulting", "areaServed": "Global", "url": window.location.origin + '/services/training-academy' },
           { "@context": "https://schema.org", "@type": "Service", "name": "Vibe Coding Program", "provider": { "@type": "Organization", "name": "Digital Pulse Innovation" }, "serviceType": "Consulting", "areaServed": "Global", "url": window.location.origin + '/services/vibe-coding' },
-          { "@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [ { "@type": "ListItem", "position": 1, "name": "Home", "item": window.location.origin + '/' }, { "@type": "ListItem", "position": 2, "name": "Services", "item": window.location.origin + '/services' } ] }
+          { "@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [ { "@type": "ListItem", "position": 1, "name": "Home", "item": window.location.origin + '/' }, { "@type": "ListItem", "position": 2, "name": "Services", "item": window.location.origin + '/services' } ] },
+          { "@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [
+            { "@type": "Question", "name": "Which services do you offer?", "acceptedAnswer": { "@type": "Answer", "text": "Digital transformation, agile coaching, software craftsmanship, innovation strategy, training & academy, vibe coding." } },
+            { "@type": "Question", "name": "Do you serve specific industries?", "acceptedAnswer": { "@type": "Answer", "text": "We work across finance, healthcare, retail, technology and more." } },
+            { "@type": "Question", "name": "How can we start?", "acceptedAnswer": { "@type": "Answer", "text": "Book a consultation to discuss goals and tailor an approach." } },
+            { "@type": "Question", "name": "Do you provide training?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, with tailored curricula, hands-on labs and mentoring." } }
+          ] }
         ]}
       />
       <div className="bg-slate-50 min-h-screen py-20">
