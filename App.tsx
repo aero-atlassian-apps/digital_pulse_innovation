@@ -2,15 +2,18 @@ import React from 'react';
 import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import { BookingProvider } from './components/BookingContext';
+import Breadcrumbs from './components/Breadcrumbs';
+import StickyCTA from './components/StickyCTA';
 import Footer from './components/Footer';
 
 // Pages
-import Home from './pages/Home';
-import Services from './pages/Services';
-import About from './pages/About';
-import Clients from './pages/Clients';
-import Team from './pages/Team';
-import Contact from './pages/Contact';
+import ReactLazy from 'react';
+const Home = ReactLazy.lazy(() => import('./pages/Home'));
+const Services = ReactLazy.lazy(() => import('./pages/Services'));
+const About = ReactLazy.lazy(() => import('./pages/About'));
+const Clients = ReactLazy.lazy(() => import('./pages/Clients'));
+const Team = ReactLazy.lazy(() => import('./pages/Team'));
+const Contact = ReactLazy.lazy(() => import('./pages/Contact'));
 
 const ScrollToTop = () => {
   const { pathname } = useLocation();
@@ -40,6 +43,7 @@ function App() {
       <BookingProvider>
         <ScrollToTop />
         <Layout>
+          <Breadcrumbs />
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/services" element={<Services />} />
@@ -48,6 +52,7 @@ function App() {
             <Route path="/team" element={<Team />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>
+          <StickyCTA />
         </Layout>
       </BookingProvider>
     </BrowserRouter>

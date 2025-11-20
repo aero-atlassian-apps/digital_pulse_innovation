@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import { Menu, X, Globe, ChevronDown } from 'lucide-react';
+import { Menu, X, Globe, ChevronDown, Moon, Sun } from 'lucide-react';
 import { Language } from '../types';
 
 const Navbar: React.FC = () => {
@@ -23,6 +23,14 @@ const Navbar: React.FC = () => {
     document.documentElement.lang = lang;
     setIsLangMenuOpen(false);
     setIsOpen(false);
+  };
+
+  const [dark, setDark] = useState<boolean>(() => document.documentElement.classList.contains('dark'));
+  const toggleDark = () => {
+    const next = !dark;
+    setDark(next);
+    document.documentElement.classList.toggle('dark', next);
+    localStorage.setItem('theme', next ? 'dark' : 'light');
   };
 
   // Close mobile menu when route changes
@@ -101,6 +109,10 @@ const Navbar: React.FC = () => {
                 </div>
               )}
             </div>
+
+            <button onClick={toggleDark} aria-label="Toggle theme" className="text-slate-600 hover:text-primary">
+              {dark ? <Sun className="w-4 h-4" /> : <Moon className="w-4 h-4" />}
+            </button>
 
             <Link
               to="/contact"

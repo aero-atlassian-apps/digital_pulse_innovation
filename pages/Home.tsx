@@ -28,9 +28,9 @@ const Home: React.FC = () => {
       
       {/* Hero Section */}
       <section className="relative bg-white overflow-hidden">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-24 lg:pt-32">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-24 lg:pt-32 gradient-hero">
           <div className="text-center max-w-4xl mx-auto">
-            <h1 className="text-5xl md:text-7xl font-display font-black tracking-tight text-primary mb-8 leading-[1.1]">
+            <h1 className="heading-1 text-primary mb-8">
               {t('hero.title')}
             </h1>
             <p className="text-xl md:text-2xl text-slate-600 mb-10 leading-relaxed">
@@ -62,6 +62,30 @@ const Home: React.FC = () => {
                     <span key={idx} className="text-xl md:text-2xl font-display font-bold text-slate-700">{client}</span>
                 ))}
             </div>
+        </div>
+      </section>
+
+      {/* Trust Indicators */}
+      <section className="py-16 bg-white">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 text-center">
+            <div className="p-6 rounded-xl bg-slate-50 border border-slate-100">
+              <p className="text-3xl font-display font-bold text-primary">{t('trust.years')}</p>
+              <p className="text-slate-600">{t('trust.years_label')}</p>
+            </div>
+            <div className="p-6 rounded-xl bg-slate-50 border border-slate-100">
+              <p className="text-3xl font-display font-bold text-primary">{t('trust.projects')}</p>
+              <p className="text-slate-600">{t('trust.projects_label')}</p>
+            </div>
+            <div className="p-6 rounded-xl bg-slate-50 border border-slate-100">
+              <p className="text-3xl font-display font-bold text-primary">{t('trust.satisfaction')}</p>
+              <p className="text-slate-600">{t('trust.satisfaction_label')}</p>
+            </div>
+            <div className="p-6 rounded-xl bg-slate-50 border border-slate-100">
+              <p className="text-3xl font-display font-bold text-primary">{t('trust.awards')}</p>
+              <p className="text-slate-600">{t('trust.awards_label')}</p>
+            </div>
+          </div>
         </div>
       </section>
 

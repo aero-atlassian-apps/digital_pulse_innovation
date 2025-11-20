@@ -1,0 +1,32 @@
+:root {
+  --font-display: 'Poppins', sans-serif;
+  --font-sans: 'Inter', sans-serif;
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --radius: 12px;
+  --color-primary: #0A2540;
+  --color-secondary: #4B88FF;
+  --color-accent: #00c497;
+  --color-success: #16a34a;
+  --color-warning: #f59e0b;
+  --color-info: #0ea5e9;
+}
+
+.gradient-hero {
+  background: radial-gradient(1200px 600px at 10% 10%, #e0f2fe 0%, transparent 60%),
+              radial-gradient(1200px 600px at 90% 90%, #d1fae5 0%, transparent 60%);
+}
+
+.heading-1 { font-family: var(--font-display); font-weight: 900; letter-spacing: -0.01em; font-size: clamp(2.5rem, 6vw, 4.5rem); }
+.heading-2 { font-family: var(--font-display); font-weight: 800; letter-spacing: -0.01em; font-size: clamp(1.75rem, 4vw, 3rem); }
+.heading-3 { font-family: var(--font-display); font-weight: 700; font-size: clamp(1.25rem, 2.5vw, 2rem); }
+
+.reveal { opacity: 0; transform: translateY(12px); transition: opacity 400ms ease, transform 400ms ease; }
+.reveal.in-view { opacity: 1; transform: translateY(0); }
+
+.dark .gradient-hero { background: radial-gradient(1200px 600px at 10% 10%, rgba(30,58,138,0.35) 0%, transparent 60%),
+                                  radial-gradient(1200px 600px at 90% 90%, rgba(13,148,136,0.35) 0%, transparent 60%); }

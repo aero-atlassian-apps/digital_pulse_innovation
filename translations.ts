@@ -16,6 +16,16 @@ export const resources = {
         cta_primary: "Our Services",
         cta_secondary: "Book Consultation"
       },
+      trust: {
+        years: "15+",
+        years_label: "Years of Experience",
+        projects: "500+",
+        projects_label: "Projects Delivered",
+        satisfaction: "98%",
+        satisfaction_label: "Client Satisfaction",
+        awards: "50+",
+        awards_label: "Industry Awards"
+      },
       services: {
         title: "Our Expertise",
         details_title: "Service Details",
@@ -106,6 +116,16 @@ export const resources = {
         subtitle: "Nous collaborons avec des entreprises visionnaires pour créer des produits numériques exceptionnels et accélérer leur transformation.",
         cta_primary: "Nos Services",
         cta_secondary: "Réserver une consultation"
+      },
+      trust: {
+        years: "15+",
+        years_label: "Années d'expérience",
+        projects: "500+",
+        projects_label: "Projets livrés",
+        satisfaction: "98%",
+        satisfaction_label: "Satisfaction client",
+        awards: "50+",
+        awards_label: "Distinctions"
       },
       services: {
         title: "Notre Expertise",
@@ -198,6 +218,16 @@ export const resources = {
         cta_primary: "Nuestros Servicios",
         cta_secondary: "Reservar Consulta"
       },
+      trust: {
+        years: "15+",
+        years_label: "Años de experiencia",
+        projects: "500+",
+        projects_label: "Proyectos entregados",
+        satisfaction: "98%",
+        satisfaction_label: "Satisfacción del cliente",
+        awards: "50+",
+        awards_label: "Premios de la industria"
+      },
       services: {
         title: "Nuestra Experiencia",
         details_title: "Detalles de los servicios",
@@ -288,6 +318,16 @@ export const resources = {
         subtitle: "نحن نتشارك مع الشركات ذات الرؤية المستقبلية لبناء منتجات رقمية استثنائية وتسريع رحلة التحول الرقمي الخاصة بهم.",
         cta_primary: "خدماتنا",
         cta_secondary: "احجز استشارة"
+      },
+      trust: {
+        years: "15+",
+        years_label: "سنوات خبرة",
+        projects: "500+",
+        projects_label: "مشاريع منجزة",
+        satisfaction: "98%",
+        satisfaction_label: "رضا العملاء",
+        awards: "50+",
+        awards_label: "جوائز الصناعة"
       },
       services: {
         title: "خبراتنا",
