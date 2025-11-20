@@ -60,7 +60,7 @@ const Navbar: React.FC = () => {
               </svg>
             </div>
             <span className="font-display font-bold text-xl text-primary group-hover:text-secondary transition-colors">
-              Digital Pulse
+              {t('brand')}
             </span>
           </Link>
 

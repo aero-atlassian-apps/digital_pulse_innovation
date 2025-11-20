@@ -13,6 +13,7 @@ export const resources = {
         language: "Language",
         toggle_theme: "Toggle theme"
       },
+      brand: "Digital Pulse Innovation",
       hero: {
         title: "Driving Innovation, Transforming Business",
         subtitle: "We partner with forward-thinking companies to build exceptional digital products and accelerate their transformation journey.",
@@ -185,6 +186,7 @@ export const resources = {
         language: "Langue",
         toggle_theme: "Changer le thème"
       },
+      brand: "Digital Pulse Innovation",
       hero: {
         title: "Piloter l'Innovation, Transformer l'Entreprise",
         subtitle: "Nous collaborons avec des entreprises visionnaires pour créer des produits numériques exceptionnels et accélérer leur transformation.",
@@ -293,6 +295,7 @@ export const resources = {
         language: "Idioma",
         toggle_theme: "Cambiar tema"
       },
+      brand: "Digital Pulse Innovation",
       hero: {
         title: "Impulsando la Innovación, Transformando Negocios",
         subtitle: "Nos asociamos con empresas con visión de futuro para construir productos digitales excepcionales y acelerar su viaje de transformación.",
@@ -401,6 +404,7 @@ export const resources = {
         language: "اللغة",
         toggle_theme: "تبديل الوضع"
       },
+      brand: "Digital Pulse Innovation",
       hero: {
         title: "قيادة الابتكار، تحويل الأعمال",
         subtitle: "نحن نتشارك مع الشركات ذات الرؤية المستقبلية لبناء منتجات رقمية استثنائية وتسريع رحلة التحول الرقمي الخاصة بهم.",
@@ -496,3 +500,27 @@ export const resources = {
     }
   }
 };
+      errors: {
+        unexpected: "An unexpected error occurred.",
+      },
+      cta: {
+        go_home: "Go Home"
+      }
+      errors: {
+        unexpected: "Une erreur inattendue s'est produite.",
+      },
+      cta: {
+        go_home: "Retour à l’accueil"
+      }
+      errors: {
+        unexpected: "Se produjo un error inesperado.",
+      },
+      cta: {
+        go_home: "Volver al inicio"
+      }
+      errors: {
+        unexpected: "حدث خطأ غير متوقع.",
+      },
+      cta: {
+        go_home: "العودة إلى الصفحة الرئيسية"
+      }

@@ -4,6 +4,7 @@ import Navbar from './components/Navbar';
 import { BookingProvider } from './components/BookingContext';
 import Breadcrumbs from './components/Breadcrumbs';
 import StickyCTA from './components/StickyCTA';
+import { ErrorBoundary } from './components/ErrorBoundary';
 import Footer from './components/Footer';
 
 // Pages
@@ -51,6 +52,7 @@ function App() {
         <ScrollToTop />
         <Layout>
           <Breadcrumbs />
+          <ErrorBoundary>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/services" element={<Services />} />
@@ -66,6 +68,7 @@ function App() {
             <Route path="/team" element={<Team />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>
+          </ErrorBoundary>
           <StickyCTA />
         </Layout>
       </BookingProvider>

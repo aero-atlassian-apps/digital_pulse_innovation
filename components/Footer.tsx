@@ -20,7 +20,7 @@ const Footer: React.FC = () => {
                 </svg>
               </div>
               <span className="font-display font-bold text-xl text-white">
-                Digital Pulse
+                {t('brand')}
               </span>
             </div>
             <p className="text-slate-300 text-sm leading-relaxed">
