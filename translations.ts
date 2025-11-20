@@ -33,12 +33,48 @@ export const resources = {
         title: "Our Expertise",
         details_title: "Service Details",
         items: {
-          digital: { title: "Digital Transformation", desc: "Modernize your business processes and leverage technology to stay ahead.", points: ["Assessment of current capabilities and digital maturity", "Roadmap and prioritized initiatives", "Change management and adoption"] },
-          agile: { title: "Agile Coaching", desc: "Enhance team productivity and deliver value faster with expert coaching.", points: ["Team and leadership coaching", "Scaling agile practices sustainably", "Delivery flow and quality improvements"] },
-          craft: { title: "Software Craftsmanship", desc: "Build robust, scalable software with clean code principles." },
-          innovation: { title: "Innovation Strategy", desc: "Foster a culture of creativity and turn ideas into solutions.", points: ["Ideation and opportunity framing", "Rapid prototyping and validation", "Portfolio governance"] },
-          training: { title: "Training & Academy", desc: "Upskill your teams with tailored training programs.", points: ["Tailored curricula and workshops", "Hands-on labs and mentoring", "Competency assessments"] },
-          vibe: { title: "Vibe Coding Program", desc: "Cultivate technical excellence and a positive engineering culture." }
+          digital: {
+            title: "Digital Transformation",
+            desc: "Modernize your business processes and leverage technology to stay ahead.",
+            overview: "We assess capabilities and define a roadmap aligning strategy and execution.",
+            points: ["Assessment of current capabilities and digital maturity", "Roadmap and prioritized initiatives", "Change management and adoption"],
+            deliverables: ["Transformation roadmap", "Operating model recommendations", "Implementation plan"]
+          },
+          agile: {
+            title: "Agile Coaching",
+            desc: "Enhance team productivity and deliver value faster with expert coaching.",
+            overview: "Team and leadership coaching, scaling practices sustainably.",
+            points: ["Team and leadership coaching", "Scaling agile practices sustainably", "Delivery flow and quality improvements"],
+            deliverables: ["Coaching charter", "Metrics and improvement backlog", "Leadership enablement plan"]
+          },
+          craft: {
+            title: "Software Craftsmanship",
+            desc: "Build robust, scalable software with clean code principles.",
+            overview: "Clean code, testing, CI/CD and architecture practices.",
+            points: ["Codebase audits and coaching", "Hands-on pairing and workshops", "Quality gates and automation"],
+            deliverables: ["Improvement plan", "Engineering playbook", "Automation pipeline templates"]
+          },
+          innovation: {
+            title: "Innovation Strategy",
+            desc: "Foster a culture of creativity and turn ideas into solutions.",
+            overview: "Ideation, prototyping and decision frameworks.",
+            points: ["Ideation and opportunity framing", "Rapid prototyping and validation", "Portfolio governance"],
+            deliverables: ["Innovation backlog", "Validation reports", "Governance model"]
+          },
+          training: {
+            title: "Training & Academy",
+            desc: "Upskill your teams with tailored training programs.",
+            overview: "Practical programs aligned to business outcomes.",
+            points: ["Tailored curricula and workshops", "Hands-on labs and mentoring", "Competency assessments"],
+            deliverables: ["Customized learning paths", "Workshop materials", "Capability reports"]
+          },
+          vibe: {
+            title: "Vibe Coding Program",
+            desc: "Cultivate technical excellence and a positive engineering culture.",
+            overview: "Culture, practices and mentorship to elevate teams.",
+            points: ["Practice communities", "Mentoring and pairing", "Recognition and growth paths"],
+            deliverables: ["Program charter", "Capability growth plan", "Outcomes dashboard"]
+          }
         }
       },
       clients: {
@@ -100,6 +136,38 @@ export const resources = {
           email: "Email Us",
           call: "Call Us"
         }
+      },
+      sections: {
+        overview: "Overview",
+        approach: "Approach",
+        deliverables: "Deliverables",
+        case_studies: "Case Studies",
+        case_studies_desc: "Explore outcomes and approaches across industries."
+      },
+      resources: {
+        subtitle: "Methodology, case studies and whitepapers.",
+        items: {
+          methodology: { title: "Methodology Guide", desc: "Understand our approach to transformation and delivery." },
+          case_studies: { title: "Case Studies", desc: "In-depth examples across industries and challenges." },
+          whitepapers: { title: "Whitepapers", desc: "Insights and playbooks from our consulting practice." }
+        }
+      },
+      cta: {
+        download: "Download",
+        view: "View",
+        get_access: "Get Access",
+        download_methodology: "Download Methodology Guide",
+        ready_discuss: "Ready to discuss your goals?",
+        ready_accelerate: "Ready to accelerate delivery?",
+        ready_quality: "Ready to elevate quality?",
+        ready_growth: "Ready to unlock growth?",
+        ready_upskill: "Ready to upskill your teams?",
+        ready_culture: "Ready to elevate culture?"
+      },
+      booking: {
+        title: "Book Consultation",
+        fallback: "Scheduling setup is coming soon. Please use our contact form.",
+        contact: "Contact Us"
       }
     }
   },
@@ -137,12 +205,12 @@ export const resources = {
         title: "Notre Expertise",
         details_title: "Détails des services",
         items: {
-          digital: { title: "Transformation Numérique", desc: "Modernisez vos processus d'affaires et tirez parti de la technologie.", points: ["Évaluation des capacités et maturité digitale", "Feuille de route et initiatives priorisées", "Conduite du changement et adoption"] },
-          agile: { title: "Coaching Agile", desc: "Améliorez la productivité des équipes et livrez de la valeur plus rapidement.", points: ["Coaching des équipes et du leadership", "Mise à l’échelle durable des pratiques agiles", "Amélioration du flux de livraison et de la qualité"] },
-          craft: { title: "Software Craftsmanship", desc: "Créez des logiciels robustes et évolutifs avec des principes de code propre." },
-          innovation: { title: "Stratégie d'Innovation", desc: "Favorisez une culture de créativité et transformez les idées en solutions.", points: ["Idéation et cadrage des opportunités", "Prototypage rapide et validation", "Gouvernance du portefeuille"] },
-          training: { title: "Formation & Académie", desc: "Améliorez les compétences de vos équipes grâce à nos programmes sur mesure.", points: ["Parcours et ateliers sur mesure", "Labs pratiques et mentoring", "Évaluations de compétences"] },
-          vibe: { title: "Programme Vibe Coding", desc: "Cultivez l'excellence technique et une culture d'ingénierie positive." }
+          digital: { title: "Transformation Numérique", desc: "Modernisez vos processus d'affaires et tirez parti de la technologie.", overview: "Nous évaluons les capacités et définissons une feuille de route alignant stratégie et exécution.", points: ["Évaluation des capacités et maturité digitale", "Feuille de route et initiatives priorisées", "Conduite du changement et adoption"], deliverables: ["Feuille de route", "Recommandations de modèle opérationnel", "Plan d’implémentation"] },
+          agile: { title: "Coaching Agile", desc: "Améliorez la productivité des équipes et livrez de la valeur plus rapidement.", overview: "Coaching des équipes et du leadership, mise à l’échelle durable.", points: ["Coaching des équipes et du leadership", "Mise à l’échelle durable des pratiques agiles", "Amélioration du flux de livraison et de la qualité"], deliverables: ["Charte de coaching", "Indicateurs et backlog d’amélioration", "Plan d’accompagnement du leadership"] },
+          craft: { title: "Software Craftsmanship", desc: "Créez des logiciels robustes et évolutifs avec des principes de code propre.", overview: "Code propre, tests, CI/CD et architecture.", points: ["Audits de codebase", "Pairing et ateliers pratiques", "Gates de qualité et automatisation"], deliverables: ["Plan d’amélioration", "Playbook d’ingénierie", "Templates de pipelines d’automatisation"] },
+          innovation: { title: "Stratégie d'Innovation", desc: "Favorisez une culture de créativité et transformez les idées en solutions.", overview: "Idéation, prototypage et cadres de décision.", points: ["Idéation et cadrage des opportunités", "Prototypage rapide et validation", "Gouvernance du portefeuille"], deliverables: ["Backlog d’innovation", "Rapports de validation", "Modèle de gouvernance"] },
+          training: { title: "Formation & Académie", desc: "Améliorez les compétences de vos équipes grâce à nos programmes sur mesure.", overview: "Programmes pratiques alignés aux résultats business.", points: ["Parcours et ateliers sur mesure", "Labs pratiques et mentoring", "Évaluations de compétences"], deliverables: ["Parcours personnalisés", "Supports d’atelier", "Rapports de capacité"] },
+          vibe: { title: "Programme Vibe Coding", desc: "Cultivez l'excellence technique et une culture d'ingénierie positive.", overview: "Culture, pratiques et mentorat pour élever les équipes.", points: ["Communautés de pratique", "Mentorat et pairing", "Reconnaissance et parcours de croissance"], deliverables: ["Charte du programme", "Plan de croissance des capacités", "Tableau de bord des résultats"] }
         }
       },
       clients: {
@@ -204,7 +272,11 @@ export const resources = {
           email: "Email",
           call: "Appelez-nous"
         }
-      }
+      },
+      sections: { overview: "Aperçu", approach: "Approche", deliverables: "Livrables", case_studies: "Études de cas", case_studies_desc: "Découvrez des résultats et approches dans plusieurs industries." },
+      resources: { subtitle: "Méthodologie, études de cas et livres blancs.", items: { methodology: { title: "Guide Méthodologique", desc: "Comprendre notre approche de la transformation et de la livraison." }, case_studies: { title: "Études de cas", desc: "Exemples détaillés par industrie et défi." }, whitepapers: { title: "Livres blancs", desc: "Insights et cadres issus de notre pratique." } } },
+      cta: { download: "Télécharger", view: "Voir", get_access: "Obtenir l'accès", download_methodology: "Télécharger le guide méthodologique", ready_discuss: "Prêt à discuter de vos objectifs ?", ready_accelerate: "Prêt à accélérer la livraison ?", ready_quality: "Prêt à élever la qualité ?", ready_growth: "Prêt à libérer la croissance ?", ready_upskill: "Prêt à développer les compétences ?", ready_culture: "Prêt à élever la culture ?" },
+      booking: { title: "Réserver une consultation", fallback: "La planification arrive bientôt. Veuillez utiliser notre formulaire de contact.", contact: "Nous contacter" }
     }
   },
   es: {
@@ -241,12 +313,12 @@ export const resources = {
         title: "Nuestra Experiencia",
         details_title: "Detalles de los servicios",
         items: {
-          digital: { title: "Transformación Digital", desc: "Modernice sus procesos comerciales y aproveche la tecnología.", points: ["Evaluación de capacidades y madurez digital", "Hoja de ruta e iniciativas priorizadas", "Gestión del cambio y adopción"] },
-          agile: { title: "Coaching Ágil", desc: "Mejore la productividad del equipo y entregue valor más rápido.", points: ["Coaching de equipos y liderazgo", "Escalado sostenible de prácticas ágiles", "Mejoras en flujo de entrega y calidad"] },
-          craft: { title: "Artesanía de Software", desc: "Construya software robusto y escalable con principios de código limpio." },
-          innovation: { title: "Estrategia de Innovación", desc: "Fomente una cultura de creatividad y convierta ideas en soluciones.", points: ["Ideación y enmarcado de oportunidades", "Prototipado rápido y validación", "Gobernanza del portafolio"] },
-          training: { title: "Formación y Academia", desc: "Mejore las habilidades de sus equipos con programas personalizados.", points: ["Planes y talleres personalizados", "Laboratorios prácticos y mentoría", "Evaluaciones de competencia"] },
-          vibe: { title: "Programa Vibe Coding", desc: "Cultive la excelencia técnica y una cultura de ingeniería positiva." }
+          digital: { title: "Transformación Digital", desc: "Modernice sus procesos comerciales y aproveche la tecnología.", overview: "Evaluamos capacidades y definimos una hoja de ruta alineada a la estrategia.", points: ["Evaluación de capacidades y madurez digital", "Hoja de ruta e iniciativas priorizadas", "Gestión del cambio y adopción"], deliverables: ["Hoja de ruta", "Recomendaciones de modelo operativo", "Plan de implementación"] },
+          agile: { title: "Coaching Ágil", desc: "Mejore la productividad del equipo y entregue valor más rápido.", overview: "Coaching de equipos y liderazgo, escalado sostenible.", points: ["Coaching de equipos y liderazgo", "Escalado sostenible de prácticas ágiles", "Mejoras en flujo de entrega y calidad"], deliverables: ["Carta de coaching", "Métricas y backlog de mejora", "Plan de habilitación del liderazgo"] },
+          craft: { title: "Artesanía de Software", desc: "Construya software robusto y escalable con principios de código limpio.", overview: "Código limpio, pruebas, CI/CD y arquitectura.", points: ["Auditorías de código", "Acompañamiento práctico y talleres", "Puertas de calidad y automatización"], deliverables: ["Plan de mejora", "Manual de ingeniería", "Plantillas de automatización"] },
+          innovation: { title: "Estrategia de Innovación", desc: "Fomente una cultura de creatividad y convierta ideas en soluciones.", overview: "Ideación, prototipado y marcos de decisión.", points: ["Ideación y enmarcado de oportunidades", "Prototipado rápido y validación", "Gobernanza del portafolio"], deliverables: ["Backlog de innovación", "Informes de validación", "Modelo de gobernanza"] },
+          training: { title: "Formación y Academia", desc: "Mejore las habilidades de sus equipos con programas personalizados.", overview: "Programas prácticos alineados a resultados.", points: ["Planes y talleres personalizados", "Laboratorios prácticos y mentoría", "Evaluaciones de competencia"], deliverables: ["Rutas personalizadas", "Materiales de talleres", "Informes de capacidades"] },
+          vibe: { title: "Programa Vibe Coding", desc: "Cultive la excelencia técnica y una cultura de ingeniería positiva.", overview: "Cultura, prácticas y mentoría para elevar equipos.", points: ["Comunidades de práctica", "Mentoría y pairing", "Reconocimiento y rutas de crecimiento"], deliverables: ["Carta del programa", "Plan de crecimiento de capacidades", "Panel de resultados"] }
         }
       },
       clients: {
@@ -308,7 +380,11 @@ export const resources = {
           email: "Envíanos un correo",
           call: "Llámanos"
         }
-      }
+      },
+      sections: { overview: "Descripción general", approach: "Enfoque", deliverables: "Entregables", case_studies: "Casos de estudio", case_studies_desc: "Explore resultados y enfoques en diversas industrias." },
+      resources: { subtitle: "Metodología, casos de estudio y documentos técnicos.", items: { methodology: { title: "Guía de Metodología", desc: "Comprenda nuestro enfoque de transformación y entrega." }, case_studies: { title: "Casos de estudio", desc: "Ejemplos detallados por industria y desafío." }, whitepapers: { title: "Documentos técnicos", desc: "Perspectivas y marcos de nuestra práctica." } } },
+      cta: { download: "Descargar", view: "Ver", get_access: "Obtener acceso", download_methodology: "Descargar la guía de metodología", ready_discuss: "¿Listo para hablar de sus objetivos?", ready_accelerate: "¿Listo para acelerar la entrega?", ready_quality: "¿Listo para elevar la calidad?", ready_growth: "¿Listo para impulsar el crecimiento?", ready_upskill: "¿Listo para mejorar las capacidades?", ready_culture: "¿Listo para mejorar la cultura?" },
+      booking: { title: "Reservar consulta", fallback: "La programación llegará pronto. Utilice nuestro formulario de contacto.", contact: "Contáctanos" }
     }
   },
   ar: {
@@ -345,12 +421,12 @@ export const resources = {
         title: "خبراتنا",
         details_title: "تفاصيل الخدمات",
         items: {
-          digital: { title: "التحول الرقمي", desc: "قم بتحديث عمليات عملك واستفد من التكنولوجيا للبقاء في المقدمة.", points: ["تقييم القدرات والنضج الرقمي", "خارطة طريق ومبادرات ذات أولوية", "إدارة التغيير والتبني"] },
-          agile: { title: "التدريب المرن (Agile)", desc: "عزز إنتاجية الفريق وقدم قيمة أسرع من خلال تدريب الخبراء.", points: ["Coaching للفرق والقيادة", "توسيع الممارسات المرنة بشكل مستدام", "تحسين تدفق التسليم والجودة"] },
-          craft: { title: "حرفية البرمجيات", desc: "بناء برمجيات قوية وقابلة للتطوير باستخدام مبادئ الكود النظيف." },
-          innovation: { title: "استراتيجية الابتكار", desc: "تعزيز ثقافة الإبداع وتحويل الأفكار إلى حلول ملموسة.", points: ["ابتكار وتحديد الفرص", "نماذج أولية سريعة والتحقق", "حوكمة المحافظ"] },
-          training: { title: "التدريب والأكاديمية", desc: "طور مهارات فرقك من خلال برامجنا التدريبية المخصصة.", points: ["مناهج وورش عمل مخصصة", "مختبرات عملية وإرشاد", "تقييمات الكفاءة"] },
-          vibe: { title: "برنامج Vibe Coding", desc: "تنمية التميز التقني وثقافة هندسية إيجابية." }
+          digital: { title: "التحول الرقمي", desc: "قم بتحديث عمليات عملك واستفد من التكنولوجيا للبقاء في المقدمة.", overview: "نقيّم القدرات ونحدد خارطة طريق تتماشى مع الاستراتيجية والتنفيذ.", points: ["تقييم القدرات والنضج الرقمي", "خارطة طريق ومبادرات ذات أولوية", "إدارة التغيير والتبني"], deliverables: ["خارطة طريق التحول", "توصيات نموذج التشغيل", "خطة التنفيذ"] },
+          agile: { title: "التدريب المرن (Agile)", desc: "عزز إنتاجية الفريق وقدم قيمة أسرع من خلال تدريب الخبراء.", overview: "Coaching للفرق والقيادة، وتوسيع الممارسات بشكل مستدام.", points: ["Coaching للفرق والقيادة", "توسيع الممارسات المرنة بشكل مستدام", "تحسين تدفق التسليم والجودة"], deliverables: ["ميثاق التدريب", "المؤشرات وBacklog تحسين", "خطة تمكين القيادة"] },
+          craft: { title: "حرفية البرمجيات", desc: "بناء برمجيات قوية وقابلة للتطوير باستخدام مبادئ الكود النظيف.", overview: "كود نظيف، اختبارات، CI/CD وممارسات الهندسة المعمارية.", points: ["مراجعات الشفرة والتدريب", "Pairing وورش عمل عملية", "بوابات الجودة والأتمتة"], deliverables: ["خطة تحسين", "دليل الهندسة", "قوالب خطوط الأتمتة"] },
+          innovation: { title: "استراتيجية الابتكار", desc: "تعزيز ثقافة الإبداع وتحويل الأفكار إلى حلول ملموسة.", overview: "ابتكار، نماذج أولية وأطر اتخاذ القرار.", points: ["ابتكار وتحديد الفرص", "نماذج أولية سريعة والتحقق", "حوكمة المحافظ"], deliverables: ["Backlog الابتكار", "تقارير التحقق", "نموذج الحوكمة"] },
+          training: { title: "التدريب والأكاديمية", desc: "طور مهارات فرقك من خلال برامجنا التدريبية المخصصة.", overview: "برامج عملية تتماشى مع النتائج التجارية.", points: ["مناهج وورش عمل مخصصة", "مختبرات عملية وإرشاد", "تقييمات الكفاءة"], deliverables: ["مسارات تعلم مخصصة", "مواد الورش", "تقارير القدرات"] },
+          vibe: { title: "برنامج Vibe Coding", desc: "تنمية التميز التقني وثقافة هندسية إيجابية.", overview: "ثقافة وممارسات وإرشاد لرفع أداء الفرق.", points: ["مجتمعات الممارسة", "الإرشاد وPairing", "التقدير ومسارات النمو"], deliverables: ["ميثاق البرنامج", "خطة نمو القدرات", "لوحة نتائج"] }
         }
       },
       clients: {
@@ -412,135 +488,11 @@ export const resources = {
           email: "راسلنا",
           call: "اتصل بنا"
         }
-      }
+      },
+      sections: { overview: "نظرة عامة", approach: "المنهجية", deliverables: "المخرجات", case_studies: "دراسات حالة", case_studies_desc: "اطّلع على النتائج والأساليب عبر مختلف الصناعات." },
+      resources: { subtitle: "المنهجية، دراسات الحالة والوثائق التقنية.", items: { methodology: { title: "الدليل المنهجي", desc: "تعرّف على نهجنا في التحول والتسليم." }, case_studies: { title: "دراسات الحالة", desc: "أمثلة مفصلة حسب الصناعة والتحدي." }, whitepapers: { title: "وثائق تقنية", desc: "رؤى وأطر من خبرتنا الاستشارية." } } },
+      cta: { download: "تحميل", view: "عرض", get_access: "الحصول على الوصول", download_methodology: "تحميل الدليل المنهجي", ready_discuss: "هل أنت مستعد لمناقشة أهدافك؟", ready_accelerate: "هل أنت مستعد لتسريع التسليم؟", ready_quality: "هل أنت مستعد لرفع الجودة؟", ready_growth: "هل أنت مستعد لتعزيز النمو؟", ready_upskill: "هل أنت مستعد لتطوير مهارات الفرق؟", ready_culture: "هل أنت مستعد لرفع الثقافة؟" },
+      booking: { title: "حجز استشارة", fallback: "سيتم تفعيل الجدولة قريبًا. يرجى استخدام نموذج الاتصال.", contact: "تواصل معنا" }
     }
   }
 };
-      sections: {
-        overview: "Overview",
-        approach: "Approach",
-        deliverables: "Deliverables",
-        case_studies: "Case Studies",
-        case_studies_desc: "Explore outcomes and approaches across industries."
-      },
-      resources: {
-        subtitle: "Methodology, case studies and whitepapers.",
-        items: {
-          methodology: { title: "Methodology Guide", desc: "Understand our approach to transformation and delivery." },
-          case_studies: { title: "Case Studies", desc: "In-depth examples across industries and challenges." },
-          whitepapers: { title: "Whitepapers", desc: "Insights and playbooks from our consulting practice." }
-        }
-      },
-      cta: {
-        download: "Download",
-        view: "View",
-        get_access: "Get Access",
-        download_methodology: "Download Methodology Guide",
-        ready_discuss: "Ready to discuss your goals?",
-        ready_accelerate: "Ready to accelerate delivery?",
-        ready_quality: "Ready to elevate quality?",
-        ready_growth: "Ready to unlock growth?",
-        ready_upskill: "Ready to upskill your teams?",
-        ready_culture: "Ready to elevate culture?"
-      },
-      booking: {
-        title: "Book Consultation",
-        fallback: "Scheduling setup is coming soon. Please use our contact form.",
-        contact: "Contact Us"
-      }
-      sections: {
-        overview: "Aperçu",
-        approach: "Approche",
-        deliverables: "Livrables",
-        case_studies: "Études de cas",
-        case_studies_desc: "Découvrez des résultats et approches dans plusieurs industries."
-      },
-      resources: {
-        subtitle: "Méthodologie, études de cas et livres blancs.",
-        items: {
-          methodology: { title: "Guide Méthodologique", desc: "Comprendre notre approche de la transformation et de la livraison." },
-          case_studies: { title: "Études de cas", desc: "Exemples détaillés par industrie et défi." },
-          whitepapers: { title: "Livres blancs", desc: "Insights et cadres issus de notre pratique." }
-        }
-      },
-      cta: {
-        download: "Télécharger",
-        view: "Voir",
-        get_access: "Obtenir l'accès",
-        download_methodology: "Télécharger le guide méthodologique",
-        ready_discuss: "Prêt à discuter de vos objectifs ?",
-        ready_accelerate: "Prêt à accélérer la livraison ?",
-        ready_quality: "Prêt à élever la qualité ?",
-        ready_growth: "Prêt à libérer la croissance ?",
-        ready_upskill: "Prêt à développer les compétences ?",
-        ready_culture: "Prêt à élever la culture ?"
-      },
-      booking: {
-        title: "Réserver une consultation",
-        fallback: "La planification arrive bientôt. Veuillez utiliser notre formulaire de contact.",
-        contact: "Nous contacter"
-      }
-      sections: {
-        overview: "Descripción general",
-        approach: "Enfoque",
-        deliverables: "Entregables",
-        case_studies: "Casos de estudio",
-        case_studies_desc: "Explore resultados y enfoques en diversas industrias."
-      },
-      resources: {
-        subtitle: "Metodología, casos de estudio y documentos técnicos.",
-        items: {
-          methodology: { title: "Guía de Metodología", desc: "Comprenda nuestro enfoque de transformación y entrega." },
-          case_studies: { title: "Casos de estudio", desc: "Ejemplos detallados por industria y desafío." },
-          whitepapers: { title: "Documentos técnicos", desc: "Perspectivas y marcos de nuestra práctica." }
-        }
-      },
-      cta: {
-        download: "Descargar",
-        view: "Ver",
-        get_access: "Obtener acceso",
-        download_methodology: "Descargar la guía de metodología",
-        ready_discuss: "¿Listo para hablar de sus objetivos?",
-        ready_accelerate: "¿Listo para acelerar la entrega?",
-        ready_quality: "¿Listo para elevar la calidad?",
-        ready_growth: "¿Listo para impulsar el crecimiento?",
-        ready_upskill: "¿Listo para mejorar las capacidades?",
-        ready_culture: "¿Listo para mejorar la cultura?"
-      },
-      booking: {
-        title: "Reservar consulta",
-        fallback: "La programación llegará pronto. Utilice nuestro formulario de contacto.",
-        contact: "Contáctanos"
-      }
-      sections: {
-        overview: "نظرة عامة",
-        approach: "المنهجية",
-        deliverables: "المخرجات",
-        case_studies: "دراسات حالة",
-        case_studies_desc: "اطّلع على النتائج والأساليب عبر مختلف الصناعات."
-      },
-      resources: {
-        subtitle: "المنهجية، دراسات الحالة والوثائق التقنية.",
-        items: {
-          methodology: { title: "الدليل المنهجي", desc: "تعرّف على نهجنا في التحول والتسليم." },
-          case_studies: { title: "دراسات الحالة", desc: "أمثلة مفصلة حسب الصناعة والتحدي." },
-          whitepapers: { title: "وثائق تقنية", desc: "رؤى وأطر من خبرتنا الاستشارية." }
-        }
-      },
-      cta: {
-        download: "تحميل",
-        view: "عرض",
-        get_access: "الحصول على الوصول",
-        download_methodology: "تحميل الدليل المنهجي",
-        ready_discuss: "هل أنت مستعد لمناقشة أهدافك؟",
-        ready_accelerate: "هل أنت مستعد لتسريع التسليم؟",
-        ready_quality: "هل أنت مستعد لرفع الجودة؟",
-        ready_growth: "هل أنت مستعد لتعزيز النمو؟",
-        ready_upskill: "هل أنت مستعد لتطوير مهارات الفرق؟",
-        ready_culture: "هل أنت مستعد لرفع الثقافة؟"
-      },
-      booking: {
-        title: "حجز استشارة",
-        fallback: "سيتم تفعيل الجدولة قريبًا. يرجى استخدام نموذج الاتصال.",
-        contact: "تواصل معنا"
-      }
