@@ -22,7 +22,17 @@ const Services: React.FC = () => {
     <>
       <SEO 
         title={t('nav.services')}
-        description="Explore our services: Digital Transformation, Agile Coaching, Software Craftsmanship, and more."
+        description="Explore our services: Digital Transformation, Agile Coaching, Software Craftsmanship, Innovation Strategy, Training & Academy, Vibe Coding."
+        canonical={window.location.origin + '/services'}
+        jsonLd={[
+          { "@context": "https://schema.org", "@type": "Service", "name": "Digital Transformation", "provider": { "@type": "Organization", "name": "Digital Pulse Innovation" }, "serviceType": "Consulting", "areaServed": "Global", "url": window.location.origin + '/services/digital-transformation' },
+          { "@context": "https://schema.org", "@type": "Service", "name": "Agile Coaching", "provider": { "@type": "Organization", "name": "Digital Pulse Innovation" }, "serviceType": "Consulting", "areaServed": "Global", "url": window.location.origin + '/services/agile-coaching' },
+          { "@context": "https://schema.org", "@type": "Service", "name": "Software Craftsmanship", "provider": { "@type": "Organization", "name": "Digital Pulse Innovation" }, "serviceType": "Consulting", "areaServed": "Global", "url": window.location.origin + '/services/software-craftsmanship' },
+          { "@context": "https://schema.org", "@type": "Service", "name": "Innovation Strategy", "provider": { "@type": "Organization", "name": "Digital Pulse Innovation" }, "serviceType": "Consulting", "areaServed": "Global", "url": window.location.origin + '/services/innovation-strategy' },
+          { "@context": "https://schema.org", "@type": "Service", "name": "Training & Academy", "provider": { "@type": "Organization", "name": "Digital Pulse Innovation" }, "serviceType": "Consulting", "areaServed": "Global", "url": window.location.origin + '/services/training-academy' },
+          { "@context": "https://schema.org", "@type": "Service", "name": "Vibe Coding Program", "provider": { "@type": "Organization", "name": "Digital Pulse Innovation" }, "serviceType": "Consulting", "areaServed": "Global", "url": window.location.origin + '/services/vibe-coding' },
+          { "@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [ { "@type": "ListItem", "position": 1, "name": "Home", "item": window.location.origin + '/' }, { "@type": "ListItem", "position": 2, "name": "Services", "item": window.location.origin + '/services' } ] }
+        ]}
       />
       <div className="bg-slate-50 min-h-screen py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -41,8 +51,9 @@ const Services: React.FC = () => {
                   </div>
                   <h3 className="text-2xl font-bold text-primary mb-3">{t(`services.items.${service.key}.title`)}</h3>
                   <p className="text-slate-600 leading-relaxed">{t(`services.items.${service.key}.desc`)}</p>
-                  <div className="mt-6">
+                  <div className="mt-6 flex items-center gap-4">
                     <BookingButton label={t('hero.cta_secondary')} className="inline-flex items-center text-secondary font-bold text-sm" />
+                    <a href={`/services/${service.key === 'digital' ? 'digital-transformation' : service.key === 'agile' ? 'agile-coaching' : service.key === 'craft' ? 'software-craftsmanship' : service.key === 'innovation' ? 'innovation-strategy' : service.key === 'training' ? 'training-academy' : 'vibe-coding'}`} className="text-primary font-bold text-sm">{t('nav.services')}</a>
                   </div>
                 </div>
               );

@@ -10,6 +10,12 @@ import Footer from './components/Footer';
 import ReactLazy from 'react';
 const Home = ReactLazy.lazy(() => import('./pages/Home'));
 const Services = ReactLazy.lazy(() => import('./pages/Services'));
+const DigitalTransformation = ReactLazy.lazy(() => import('./pages/services/DigitalTransformation'));
+const AgileCoaching = ReactLazy.lazy(() => import('./pages/services/AgileCoaching'));
+const SoftwareCraftsmanship = ReactLazy.lazy(() => import('./pages/services/SoftwareCraftsmanship'));
+const InnovationStrategy = ReactLazy.lazy(() => import('./pages/services/InnovationStrategy'));
+const TrainingAcademy = ReactLazy.lazy(() => import('./pages/services/TrainingAcademy'));
+const VibeCoding = ReactLazy.lazy(() => import('./pages/services/VibeCoding'));
 const About = ReactLazy.lazy(() => import('./pages/About'));
 const Clients = ReactLazy.lazy(() => import('./pages/Clients'));
 const Team = ReactLazy.lazy(() => import('./pages/Team'));
@@ -47,6 +53,12 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/services" element={<Services />} />
+            <Route path="/services/digital-transformation" element={<DigitalTransformation />} />
+            <Route path="/services/agile-coaching" element={<AgileCoaching />} />
+            <Route path="/services/software-craftsmanship" element={<SoftwareCraftsmanship />} />
+            <Route path="/services/innovation-strategy" element={<InnovationStrategy />} />
+            <Route path="/services/training-academy" element={<TrainingAcademy />} />
+            <Route path="/services/vibe-coding" element={<VibeCoding />} />
             <Route path="/about" element={<About />} />
             <Route path="/clients" element={<Clients />} />
             <Route path="/team" element={<Team />} />

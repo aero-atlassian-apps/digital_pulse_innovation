@@ -24,6 +24,11 @@ const Home: React.FC = () => {
       <SEO 
         title={t('nav.home')}
         description="Digital Pulse Innovation - Driving Innovation, Transforming Business through software craftsmanship and agile coaching."
+        canonical={window.location.origin + '/'}
+        jsonLd={[
+          { "@context": "https://schema.org", "@type": "Organization", "name": "Digital Pulse Innovation", "url": window.location.origin },
+          { "@context": "https://schema.org", "@type": "WebSite", "name": "Digital Pulse Innovation", "url": window.location.origin }
+        ]}
       />
       
       {/* Hero Section */}
