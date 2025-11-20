@@ -111,7 +111,7 @@ const Navbar: React.FC = () => {
               )}
             </div>
 
-            <button onClick={toggleDark} aria-label="Toggle theme" className="text-slate-600 hover:text-primary">
+            <button onClick={toggleDark} aria-label={t('nav.toggle_theme')} className="text-slate-600 hover:text-primary">
               {dark ? <Sun className="w-4 h-4" /> : <Moon className="w-4 h-4" />}
             </button>
 
@@ -151,7 +151,7 @@ const Navbar: React.FC = () => {
               </Link>
             ))}
             <div className="pt-4 border-t border-slate-100">
-              <p className="text-xs font-bold text-slate-400 uppercase mb-3">Language</p>
+              <p className="text-xs font-bold text-slate-400 uppercase mb-3">{t('nav.language')}</p>
               <div className="flex gap-3">
                 {languages.map((lang) => (
                   <button

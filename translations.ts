@@ -9,7 +9,9 @@ export const resources = {
         clients: "Clients & Cases",
         team: "Team",
         contact: "Contact",
-        cta: "Get in Touch"
+        cta: "Get in Touch",
+        language: "Language",
+        toggle_theme: "Toggle theme"
       },
       hero: {
         title: "Driving Innovation, Transforming Business",
@@ -111,7 +113,9 @@ export const resources = {
         clients: "Clients & Cas",
         team: "Équipe",
         contact: "Contact",
-        cta: "Contactez-nous"
+        cta: "Contactez-nous",
+        language: "Langue",
+        toggle_theme: "Changer le thème"
       },
       hero: {
         title: "Piloter l'Innovation, Transformer l'Entreprise",
@@ -213,7 +217,9 @@ export const resources = {
         clients: "Clientes",
         team: "Equipo",
         contact: "Contacto",
-        cta: "Contáctanos"
+        cta: "Contáctanos",
+        language: "Idioma",
+        toggle_theme: "Cambiar tema"
       },
       hero: {
         title: "Impulsando la Innovación, Transformando Negocios",
@@ -315,7 +321,9 @@ export const resources = {
         clients: "العملاء",
         team: "الفريق",
         contact: "اتصل بنا",
-        cta: "تواصل معنا"
+        cta: "تواصل معنا",
+        language: "اللغة",
+        toggle_theme: "تبديل الوضع"
       },
       hero: {
         title: "قيادة الابتكار، تحويل الأعمال",
@@ -408,3 +416,131 @@ export const resources = {
     }
   }
 };
+      sections: {
+        overview: "Overview",
+        approach: "Approach",
+        deliverables: "Deliverables",
+        case_studies: "Case Studies",
+        case_studies_desc: "Explore outcomes and approaches across industries."
+      },
+      resources: {
+        subtitle: "Methodology, case studies and whitepapers.",
+        items: {
+          methodology: { title: "Methodology Guide", desc: "Understand our approach to transformation and delivery." },
+          case_studies: { title: "Case Studies", desc: "In-depth examples across industries and challenges." },
+          whitepapers: { title: "Whitepapers", desc: "Insights and playbooks from our consulting practice." }
+        }
+      },
+      cta: {
+        download: "Download",
+        view: "View",
+        get_access: "Get Access",
+        download_methodology: "Download Methodology Guide",
+        ready_discuss: "Ready to discuss your goals?",
+        ready_accelerate: "Ready to accelerate delivery?",
+        ready_quality: "Ready to elevate quality?",
+        ready_growth: "Ready to unlock growth?",
+        ready_upskill: "Ready to upskill your teams?",
+        ready_culture: "Ready to elevate culture?"
+      },
+      booking: {
+        title: "Book Consultation",
+        fallback: "Scheduling setup is coming soon. Please use our contact form.",
+        contact: "Contact Us"
+      }
+      sections: {
+        overview: "Aperçu",
+        approach: "Approche",
+        deliverables: "Livrables",
+        case_studies: "Études de cas",
+        case_studies_desc: "Découvrez des résultats et approches dans plusieurs industries."
+      },
+      resources: {
+        subtitle: "Méthodologie, études de cas et livres blancs.",
+        items: {
+          methodology: { title: "Guide Méthodologique", desc: "Comprendre notre approche de la transformation et de la livraison." },
+          case_studies: { title: "Études de cas", desc: "Exemples détaillés par industrie et défi." },
+          whitepapers: { title: "Livres blancs", desc: "Insights et cadres issus de notre pratique." }
+        }
+      },
+      cta: {
+        download: "Télécharger",
+        view: "Voir",
+        get_access: "Obtenir l'accès",
+        download_methodology: "Télécharger le guide méthodologique",
+        ready_discuss: "Prêt à discuter de vos objectifs ?",
+        ready_accelerate: "Prêt à accélérer la livraison ?",
+        ready_quality: "Prêt à élever la qualité ?",
+        ready_growth: "Prêt à libérer la croissance ?",
+        ready_upskill: "Prêt à développer les compétences ?",
+        ready_culture: "Prêt à élever la culture ?"
+      },
+      booking: {
+        title: "Réserver une consultation",
+        fallback: "La planification arrive bientôt. Veuillez utiliser notre formulaire de contact.",
+        contact: "Nous contacter"
+      }
+      sections: {
+        overview: "Descripción general",
+        approach: "Enfoque",
+        deliverables: "Entregables",
+        case_studies: "Casos de estudio",
+        case_studies_desc: "Explore resultados y enfoques en diversas industrias."
+      },
+      resources: {
+        subtitle: "Metodología, casos de estudio y documentos técnicos.",
+        items: {
+          methodology: { title: "Guía de Metodología", desc: "Comprenda nuestro enfoque de transformación y entrega." },
+          case_studies: { title: "Casos de estudio", desc: "Ejemplos detallados por industria y desafío." },
+          whitepapers: { title: "Documentos técnicos", desc: "Perspectivas y marcos de nuestra práctica." }
+        }
+      },
+      cta: {
+        download: "Descargar",
+        view: "Ver",
+        get_access: "Obtener acceso",
+        download_methodology: "Descargar la guía de metodología",
+        ready_discuss: "¿Listo para hablar de sus objetivos?",
+        ready_accelerate: "¿Listo para acelerar la entrega?",
+        ready_quality: "¿Listo para elevar la calidad?",
+        ready_growth: "¿Listo para impulsar el crecimiento?",
+        ready_upskill: "¿Listo para mejorar las capacidades?",
+        ready_culture: "¿Listo para mejorar la cultura?"
+      },
+      booking: {
+        title: "Reservar consulta",
+        fallback: "La programación llegará pronto. Utilice nuestro formulario de contacto.",
+        contact: "Contáctanos"
+      }
+      sections: {
+        overview: "نظرة عامة",
+        approach: "المنهجية",
+        deliverables: "المخرجات",
+        case_studies: "دراسات حالة",
+        case_studies_desc: "اطّلع على النتائج والأساليب عبر مختلف الصناعات."
+      },
+      resources: {
+        subtitle: "المنهجية، دراسات الحالة والوثائق التقنية.",
+        items: {
+          methodology: { title: "الدليل المنهجي", desc: "تعرّف على نهجنا في التحول والتسليم." },
+          case_studies: { title: "دراسات الحالة", desc: "أمثلة مفصلة حسب الصناعة والتحدي." },
+          whitepapers: { title: "وثائق تقنية", desc: "رؤى وأطر من خبرتنا الاستشارية." }
+        }
+      },
+      cta: {
+        download: "تحميل",
+        view: "عرض",
+        get_access: "الحصول على الوصول",
+        download_methodology: "تحميل الدليل المنهجي",
+        ready_discuss: "هل أنت مستعد لمناقشة أهدافك؟",
+        ready_accelerate: "هل أنت مستعد لتسريع التسليم؟",
+        ready_quality: "هل أنت مستعد لرفع الجودة؟",
+        ready_growth: "هل أنت مستعد لتعزيز النمو؟",
+        ready_upskill: "هل أنت مستعد لتطوير مهارات الفرق؟",
+        ready_culture: "هل أنت مستعد لرفع الثقافة؟"
+      },
+      booking: {
+        title: "حجز استشارة",
+        fallback: "سيتم تفعيل الجدولة قريبًا. يرجى استخدام نموذج الاتصال.",
+        contact: "تواصل معنا"
+      }
