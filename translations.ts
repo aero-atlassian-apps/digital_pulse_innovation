@@ -500,27 +500,3 @@ export const resources = {
     }
   }
 };
-      errors: {
-        unexpected: "An unexpected error occurred.",
-      },
-      cta: {
-        go_home: "Go Home"
-      }
-      errors: {
-        unexpected: "Une erreur inattendue s'est produite.",
-      },
-      cta: {
-        go_home: "Retour à l’accueil"
-      }
-      errors: {
-        unexpected: "Se produjo un error inesperado.",
-      },
-      cta: {
-        go_home: "Volver al inicio"
-      }
-      errors: {
-        unexpected: "حدث خطأ غير متوقع.",
-      },
-      cta: {
-        go_home: "العودة إلى الصفحة الرئيسية"
-      }
