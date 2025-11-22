@@ -6,6 +6,7 @@ import Breadcrumbs from './components/Breadcrumbs';
 import StickyCTA from './components/StickyCTA';
 import { ErrorBoundary } from './components/ErrorBoundary';
 import Footer from './components/Footer';
+import { getOrganizationStructuredData, renderStructuredData } from './src/utils/structuredData';
 
 // Pages
 import ReactLazy from 'react';
@@ -22,6 +23,8 @@ const About = ReactLazy.lazy(() => import('./pages/About'));
 const Clients = ReactLazy.lazy(() => import('./pages/Clients'));
 const Team = ReactLazy.lazy(() => import('./pages/Team'));
 const Contact = ReactLazy.lazy(() => import('./pages/Contact'));
+const ROICalculator = ReactLazy.lazy(() => import('./pages/tools/ROICalculator'));
+const DigitalMaturityAssessment = ReactLazy.lazy(() => import('./pages/tools/DigitalMaturityAssessment'));
 
 const ScrollToTop = () => {
   const { pathname } = useLocation();
@@ -46,9 +49,18 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
 };
 
 function App() {
+  const organizationData = getOrganizationStructuredData();
+  
   return (
     <BrowserRouter>
       <BookingProvider>
+        {/* Organization JSON-LD Structured Data */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: renderStructuredData(organizationData)
+          }}
+        />
         <ScrollToTop />
         <Layout>
           <Breadcrumbs />
@@ -63,6 +75,8 @@ function App() {
             <Route path="/services/innovation-strategy" element={<InnovationStrategy />} />
             <Route path="/services/training-academy" element={<TrainingAcademy />} />
             <Route path="/services/vibe-coding" element={<VibeCoding />} />
+            <Route path="/tools/roi-calculator" element={<ROICalculator />} />
+            <Route path="/tools/digital-maturity-assessment" element={<DigitalMaturityAssessment />} />
             <Route path="/about" element={<About />} />
             <Route path="/clients" element={<Clients />} />
             <Route path="/team" element={<Team />} />

@@ -1,6 +1,7 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import SEO from '../components/SEO';
+import OptimizedImage from '../components/OptimizedImage';
 
 const Clients: React.FC = () => {
   const { t } = useTranslation();
@@ -43,10 +44,12 @@ const Clients: React.FC = () => {
                {clientLogos.map((client, i) => (
                  <div key={i} className="flex flex-col items-center justify-center gap-4 group">
                     <div className="w-full h-24 flex items-center justify-center p-6 bg-slate-50 rounded-xl transition-all group-hover:bg-white group-hover:shadow-lg border border-transparent group-hover:border-slate-100">
-                      <img 
+                      <OptimizedImage 
                         src={client.logo} 
                         alt={client.name}
                         className="max-h-12 w-auto grayscale opacity-50 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300"
+                        width={120}
+                        height={48}
                       />
                     </div>
                     <span className="text-xs font-bold text-slate-400 group-hover:text-primary transition-colors">{client.name}</span>

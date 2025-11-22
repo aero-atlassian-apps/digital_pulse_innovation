@@ -165,10 +165,75 @@ export const resources = {
         ready_upskill: "Ready to upskill your teams?",
         ready_culture: "Ready to elevate culture?"
       },
+      tools_teaser: {
+        title: "Interactive Assessment Tools",
+        subtitle: "Discover your digital potential with our free assessment tools",
+        roi_title: "ROI Calculator",
+        roi_desc: "Calculate the potential return on investment from digital transformation initiatives",
+        assessment_title: "Digital Maturity Assessment",
+        assessment_desc: "Evaluate your organization's digital maturity across key dimensions",
+        cta: "Try Our Tools"
+      },
       booking: {
         title: "Book Consultation",
         fallback: "Scheduling setup is coming soon. Please use our contact form.",
         contact: "Contact Us"
+      },
+      tools: {
+        roi: {
+          title: "ROI Calculator",
+          subtitle: "Calculate the potential return on investment from our digital transformation services",
+          input_section: "Input Your Data",
+          team_size: "Team Size",
+          avg_salary: "Average Annual Salary ($)",
+          project_duration: "Project Duration (months)",
+          current_efficiency: "Current Team Efficiency (%)",
+          target_efficiency: "Target Efficiency (%)",
+          defect_rate: "Current Defect Rate (%)",
+          calculate: "Calculate ROI",
+          results: "Results",
+          annual_savings: "Annual Savings",
+          roi_percentage: "ROI Percentage",
+          payback_months: "Payback Period",
+          current_costs: "Current Costs",
+          get_report: "Get Detailed Report",
+          get_report_title: "Get Your Detailed ROI Report",
+          name: "Name",
+          email: "Email",
+          company: "Company",
+          send_report: "Send Report",
+          enter_data: "Enter your data and click \"Calculate ROI\" to see results",
+          seo_title: "ROI Calculator - Digital Pulse Innovation",
+          seo_description: "Calculate the potential return on investment from digital transformation services with our interactive ROI calculator.",
+          seo_keywords: "ROI calculator, digital transformation ROI, business case, investment return, consulting ROI"
+        },
+        assessment: {
+          title: "Digital Maturity Assessment",
+          subtitle: "Evaluate your organization's digital maturity across key dimensions",
+          results_title: "Digital Maturity Assessment Results",
+          results_subtitle: "Your organization's digital maturity profile",
+          score_description: "Based on your assessment across 8 key dimensions",
+          category_breakdown: "Category Breakdown",
+          recommendations: "Key Recommendations",
+          get_detailed_report: "Get Detailed Report",
+          get_report_title: "Get Your Detailed Assessment Report",
+          name: "Name",
+          email: "Email",
+          company: "Company",
+          send_report: "Send Report",
+          question: "Question",
+          of: "of",
+          previous: "Previous",
+          next: "Next",
+          finish: "Finish",
+          seo_title: "Digital Maturity Assessment - Digital Pulse Innovation",
+          seo_description: "Evaluate your organization's digital maturity across key dimensions with our comprehensive assessment tool.",
+          seo_keywords: "digital maturity assessment, digital transformation, maturity model, digital readiness"
+        }
+      },
+      common: {
+        cancel: "Cancel",
+        sending: "Sending..."
       }
     }
   },
@@ -278,7 +343,72 @@ export const resources = {
       sections: { overview: "Aperçu", approach: "Approche", deliverables: "Livrables", case_studies: "Études de cas", case_studies_desc: "Découvrez des résultats et approches dans plusieurs industries." },
       resources: { subtitle: "Méthodologie, études de cas et livres blancs.", items: { methodology: { title: "Guide Méthodologique", desc: "Comprendre notre approche de la transformation et de la livraison." }, case_studies: { title: "Études de cas", desc: "Exemples détaillés par industrie et défi." }, whitepapers: { title: "Livres blancs", desc: "Insights et cadres issus de notre pratique." } } },
       cta: { download: "Télécharger", view: "Voir", get_access: "Obtenir l'accès", download_methodology: "Télécharger le guide méthodologique", ready_discuss: "Prêt à discuter de vos objectifs ?", ready_accelerate: "Prêt à accélérer la livraison ?", ready_quality: "Prêt à élever la qualité ?", ready_growth: "Prêt à libérer la croissance ?", ready_upskill: "Prêt à développer les compétences ?", ready_culture: "Prêt à élever la culture ?" },
-      booking: { title: "Réserver une consultation", fallback: "La planification arrive bientôt. Veuillez utiliser notre formulaire de contact.", contact: "Nous contacter" }
+      tools_teaser: {
+        title: "Outils d'Évaluation Interactifs",
+        subtitle: "Découvrez votre potentiel numérique avec nos outils d'évaluation gratuits",
+        roi_title: "Calculateur de ROI",
+        roi_desc: "Calculez le retour sur investissement potentiel des initiatives de transformation numérique",
+        assessment_title: "Évaluation de la Maturité Digitale",
+        assessment_desc: "Évaluez la maturité numérique de votre organisation selon plusieurs dimensions clés",
+        cta: "Essayer nos outils"
+      },
+      booking: { title: "Réserver une consultation", fallback: "La planification arrive bientôt. Veuillez utiliser notre formulaire de contact.", contact: "Nous contacter" },
+      tools: {
+        roi: {
+          title: "Calculateur de ROI",
+          subtitle: "Calculez le retour sur investissement potentiel de nos services de transformation numérique",
+          input_section: "Entrez vos données",
+          team_size: "Taille de l'équipe",
+          avg_salary: "Salaire annuel moyen ($)",
+          project_duration: "Durée du projet (mois)",
+          current_efficiency: "Efficacité actuelle de l'équipe (%)",
+          target_efficiency: "Efficacité cible (%)",
+          defect_rate: "Taux de défauts actuel (%)",
+          calculate: "Calculer le ROI",
+          results: "Résultats",
+          annual_savings: "Économies annuelles",
+          roi_percentage: "Pourcentage de ROI",
+          payback_months: "Période de retour",
+          current_costs: "Coûts actuels",
+          get_report: "Obtenir le rapport détaillé",
+          get_report_title: "Obtenez votre rapport ROI détaillé",
+          name: "Nom",
+          email: "Email",
+          company: "Entreprise",
+          send_report: "Envoyer le rapport",
+          enter_data: "Entrez vos données et cliquez sur \"Calculer le ROI\" pour voir les résultats",
+          seo_title: "Calculateur de ROI - Digital Pulse Innovation",
+          seo_description: "Calculez le retour sur investissement potentiel des services de transformation numérique avec notre calculateur interactif.",
+          seo_keywords: "calculateur de ROI, ROI transformation numérique, cas d'affaires, retour sur investissement, ROI conseil"
+        },
+        assessment: {
+          title: "Évaluation de la Maturité Digitale",
+          subtitle: "Évaluez la maturité numérique de votre organisation selon plusieurs dimensions clés",
+          results_title: "Résultats de l'Évaluation de la Maturité Digitale",
+          results_subtitle: "Le profil de maturité numérique de votre organisation",
+          score_description: "Basé sur votre évaluation à travers 8 dimensions clés",
+          category_breakdown: "Répartition par catégorie",
+          recommendations: "Recommandations clés",
+          get_detailed_report: "Obtenir le rapport détaillé",
+          get_report_title: "Obtenez votre rapport d'évaluation détaillé",
+          name: "Nom",
+          email: "Email",
+          company: "Entreprise",
+          send_report: "Envoyer le rapport",
+          question: "Question",
+          of: "de",
+          previous: "Précédent",
+          next: "Suivant",
+          finish: "Terminer",
+          seo_title: "Évaluation de la Maturité Digitale - Digital Pulse Innovation",
+          seo_description: "Évaluez la maturité numérique de votre organisation selon plusieurs dimensions clés avec notre outil d'évaluation complet.",
+          seo_keywords: "évaluation maturité digitale, transformation numérique, modèle de maturité, préparation numérique"
+        }
+      },
+      common: {
+        cancel: "Annuler",
+        sending: "Envoi..."
+      }
     }
   },
   es: {
@@ -387,7 +517,72 @@ export const resources = {
       sections: { overview: "Descripción general", approach: "Enfoque", deliverables: "Entregables", case_studies: "Casos de estudio", case_studies_desc: "Explore resultados y enfoques en diversas industrias." },
       resources: { subtitle: "Metodología, casos de estudio y documentos técnicos.", items: { methodology: { title: "Guía de Metodología", desc: "Comprenda nuestro enfoque de transformación y entrega." }, case_studies: { title: "Casos de estudio", desc: "Ejemplos detallados por industria y desafío." }, whitepapers: { title: "Documentos técnicos", desc: "Perspectivas y marcos de nuestra práctica." } } },
       cta: { download: "Descargar", view: "Ver", get_access: "Obtener acceso", download_methodology: "Descargar la guía de metodología", ready_discuss: "¿Listo para hablar de sus objetivos?", ready_accelerate: "¿Listo para acelerar la entrega?", ready_quality: "¿Listo para elevar la calidad?", ready_growth: "¿Listo para impulsar el crecimiento?", ready_upskill: "¿Listo para mejorar las capacidades?", ready_culture: "¿Listo para mejorar la cultura?" },
-      booking: { title: "Reservar consulta", fallback: "La programación llegará pronto. Utilice nuestro formulario de contacto.", contact: "Contáctanos" }
+      tools_teaser: {
+        title: "Herramientas de Evaluación Interactivas",
+        subtitle: "Descubra su potencial digital con nuestras herramientas de evaluación gratuitas",
+        roi_title: "Calculadora de ROI",
+        roi_desc: "Calcule el potencial de retorno de inversión de las iniciativas de transformación digital",
+        assessment_title: "Evaluación de Madurez Digital",
+        assessment_desc: "Evalúe la madurez digital de su organización en dimensiones clave",
+        cta: "Probar nuestras herramientas"
+      },
+      booking: { title: "Reservar consulta", fallback: "La programación llegará pronto. Utilice nuestro formulario de contacto.", contact: "Contáctanos" },
+      tools: {
+        roi: {
+          title: "Calculadora de ROI",
+          subtitle: "Calcule el potencial de retorno de inversión de nuestros servicios de transformación digital",
+          input_section: "Ingrese sus datos",
+          team_size: "Tamaño del equipo",
+          avg_salary: "Salario anual promedio ($)",
+          project_duration: "Duración del proyecto (meses)",
+          current_efficiency: "Eficiencia actual del equipo (%)",
+          target_efficiency: "Eficiencia objetivo (%)",
+          defect_rate: "Tasa de defectos actual (%)",
+          calculate: "Calcular ROI",
+          results: "Resultados",
+          annual_savings: "Ahorros anuales",
+          roi_percentage: "Porcentaje de ROI",
+          payback_months: "Período de recuperación",
+          current_costs: "Costos actuales",
+          get_report: "Obtener informe detallado",
+          get_report_title: "Obtenga su informe ROI detallado",
+          name: "Nombre",
+          email: "Correo",
+          company: "Empresa",
+          send_report: "Enviar informe",
+          enter_data: "Ingrese sus datos y haga clic en \"Calcular ROI\" para ver los resultados",
+          seo_title: "Calculadora de ROI - Digital Pulse Innovation",
+          seo_description: "Calcule el potencial de retorno de inversión de los servicios de transformación digital con nuestra calculadora interactiva.",
+          seo_keywords: "calculadora de ROI, ROI transformación digital, caso de negocio, retorno de inversión, ROI consultoría"
+        },
+        assessment: {
+          title: "Evaluación de Madurez Digital",
+          subtitle: "Evalúe la madurez digital de su organización en dimensiones clave",
+          results_title: "Resultados de la Evaluación de Madurez Digital",
+          results_subtitle: "El perfil de madurez digital de su organización",
+          score_description: "Basado en su evaluación en 8 dimensiones clave",
+          category_breakdown: "Desglose por categoría",
+          recommendations: "Recomendaciones clave",
+          get_detailed_report: "Obtener informe detallado",
+          get_report_title: "Obtenga su informe de evaluación detallado",
+          name: "Nombre",
+          email: "Correo",
+          company: "Empresa",
+          send_report: "Enviar informe",
+          question: "Pregunta",
+          of: "de",
+          previous: "Anterior",
+          next: "Siguiente",
+          finish: "Finalizar",
+          seo_title: "Evaluación de Madurez Digital - Digital Pulse Innovation",
+          seo_description: "Evalúe la madurez digital de su organización en dimensiones clave con nuestra herramienta de evaluación integral.",
+          seo_keywords: "evaluación madurez digital, transformación digital, modelo de madurez, preparación digital"
+        }
+      },
+      common: {
+        cancel: "Cancelar",
+        sending: "Enviando..."
+      }
     }
   },
   ar: {
@@ -496,7 +691,72 @@ export const resources = {
       sections: { overview: "نظرة عامة", approach: "المنهجية", deliverables: "المخرجات", case_studies: "دراسات حالة", case_studies_desc: "اطّلع على النتائج والأساليب عبر مختلف الصناعات." },
       resources: { subtitle: "المنهجية، دراسات الحالة والوثائق التقنية.", items: { methodology: { title: "الدليل المنهجي", desc: "تعرّف على نهجنا في التحول والتسليم." }, case_studies: { title: "دراسات الحالة", desc: "أمثلة مفصلة حسب الصناعة والتحدي." }, whitepapers: { title: "وثائق تقنية", desc: "رؤى وأطر من خبرتنا الاستشارية." } } },
       cta: { download: "تحميل", view: "عرض", get_access: "الحصول على الوصول", download_methodology: "تحميل الدليل المنهجي", ready_discuss: "هل أنت مستعد لمناقشة أهدافك؟", ready_accelerate: "هل أنت مستعد لتسريع التسليم؟", ready_quality: "هل أنت مستعد لرفع الجودة؟", ready_growth: "هل أنت مستعد لتعزيز النمو؟", ready_upskill: "هل أنت مستعد لتطوير مهارات الفرق؟", ready_culture: "هل أنت مستعد لرفع الثقافة؟" },
-      booking: { title: "حجز استشارة", fallback: "سيتم تفعيل الجدولة قريبًا. يرجى استخدام نموذج الاتصال.", contact: "تواصل معنا" }
+      tools_teaser: {
+        title: "أدوات التقييم التفاعلية",
+        subtitle: "اكتشف إمكاناتك الرقمية مع أدوات التقييم المجانية لدينا",
+        roi_title: "حاسبة العائد على الاستثمار",
+        roi_desc: "احسب العائد المحتمل على الاستثمار من مبادرات التحول الرقمي",
+        assessment_title: "تقييم النضج الرقمي",
+        assessment_desc: "قيّم نضج مؤسستك الرقمي عبر الأبعاد الرئيسية",
+        cta: "جرب أدواتنا"
+      },
+      booking: { title: "حجز استشارة", fallback: "سيتم تفعيل الجدولة قريبًا. يرجى استخدام نموذج الاتصال.", contact: "تواصل معنا" },
+      tools: {
+        roi: {
+          title: "حاسبة العائد على الاستثمار",
+          subtitle: "احسب العائد المحتمل على الاستثمار من خدمات التحول الرقمي لدينا",
+          input_section: "أدخل بياناتك",
+          team_size: "حجم الفريق",
+          avg_salary: "متوسط الراتب السنوي ($)",
+          project_duration: "مدة المشروع (أشهر)",
+          current_efficiency: "كفاءة الفريق الحالية (%)",
+          target_efficiency: "الكفاءة المستهدفة (%)",
+          defect_rate: "معدل العيوب الحالي (%)",
+          calculate: "احسب العائد على الاستثمار",
+          results: "النتائج",
+          annual_savings: "المدخرات السنوية",
+          roi_percentage: "نسبة العائد على الاستثمار",
+          payback_months: "فترة الاسترداد",
+          current_costs: "التكاليف الحالية",
+          get_report: "احصل على التقرير التفصيلي",
+          get_report_title: "احصل على تقرير العائد على الاستثمار التفصيلي الخاص بك",
+          name: "الاسم",
+          email: "البريد الإلكتروني",
+          company: "الشركة",
+          send_report: "إرسال التقرير",
+          enter_data: "أدخل بياناتك وانقر على \"احسب العائد على الاستثمار\" لرؤية النتائج",
+          seo_title: "حاسبة العائد على الاستثمار - Digital Pulse Innovation",
+          seo_description: "احسب العائد المحتمل على الاستثمار من خدمات التحول الرقمي باستخدام حاسبتنا التفاعلية.",
+          seo_keywords: "حاسبة العائد على الاستثمار، عائد التحول الرقمي، دراسة الجدوى، العائد على الاستثمار، استشارات العائد على الاستثمار"
+        },
+        assessment: {
+          title: "تقييم النضج الرقمي",
+          subtitle: "قيّم نضج مؤسستك الرقمي عبر الأبعاد الرئيسية",
+          results_title: "نتائج تقييم النضج الرقمي",
+          results_subtitle: "ملف نضج مؤسستك الرقمي",
+          score_description: "بناءً على تقييمك عبر 8 أبعاد رئيسية",
+          category_breakdown: "التوزيع حسب الفئة",
+          recommendations: "التوصيات الرئيسية",
+          get_detailed_report: "احصل على التقرير التفصيلي",
+          get_report_title: "احصل على تقرير التقييم التفصيلي الخاص بك",
+          name: "الاسم",
+          email: "البريد الإلكتروني",
+          company: "الشركة",
+          send_report: "إرسال التقرير",
+          question: "سؤال",
+          of: "من",
+          previous: "السابق",
+          next: "التالي",
+          finish: "إنهاء",
+          seo_title: "تقييم النضج الرقمي - Digital Pulse Innovation",
+          seo_description: "قيّم نضج مؤسستك الرقمي عبر الأبعاد الرئيسية باستخدام أداتنا الشاملة للتقييم.",
+          seo_keywords: "تقييم النضج الرقمي، التحول الرقمي، نموذج النضج، الجاهزية الرقمية"
+        }
+      },
+      common: {
+        cancel: "إلغاء",
+        sending: "جارٍ الإرسال..."
+      }
     }
   }
 };

@@ -1,7 +1,7 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import SEO from '../components/SEO';
-import { ArrowRight, Zap, Users, Code, Award, Activity, Smile } from 'lucide-react';
+import { ArrowRight, Zap, Users, Code, Award, Activity, Smile, Calculator, BarChart3 } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import BookingButton from '../components/BookingButton';
 
@@ -163,6 +163,44 @@ const Home: React.FC = () => {
               <p className="text-sm font-bold text-slate-500 uppercase tracking-widest mb-2">{t('clients.metrics.adoption')}</p>
               <p className="text-3xl font-display font-bold text-primary">{t('metrics.values.adoption')}</p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Tools Teaser Section */}
+      <section className="py-24 bg-slate-50 border-t border-slate-200">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center max-w-3xl mx-auto mb-16">
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-primary mb-4">{t('tools_teaser.title')}</h2>
+            <p className="text-lg text-slate-600">{t('tools_teaser.subtitle')}</p>
+          </div>
+          <div className="grid md:grid-cols-2 gap-8">
+            <div className="bg-white rounded-2xl p-8 shadow-sm border border-slate-100 hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
+              <div className="w-14 h-14 bg-blue-50 rounded-xl flex items-center justify-center text-secondary mb-6">
+                <Calculator className="w-8 h-8" />
+              </div>
+              <h3 className="text-2xl font-bold text-primary mb-3">{t('tools_teaser.roi_title')}</h3>
+              <p className="text-slate-600 leading-relaxed mb-6">{t('tools_teaser.roi_desc')}</p>
+              <Link to="/tools/roi-calculator" className="inline-flex items-center text-secondary font-bold group">
+                Try ROI Calculator <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
+              </Link>
+            </div>
+            <div className="bg-white rounded-2xl p-8 shadow-sm border border-slate-100 hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
+              <div className="w-14 h-14 bg-green-50 rounded-xl flex items-center justify-center text-secondary mb-6">
+                <BarChart3 className="w-8 h-8" />
+              </div>
+              <h3 className="text-2xl font-bold text-primary mb-3">{t('tools_teaser.assessment_title')}</h3>
+              <p className="text-slate-600 leading-relaxed mb-6">{t('tools_teaser.assessment_desc')}</p>
+              <Link to="/tools/digital-maturity-assessment" className="inline-flex items-center text-secondary font-bold group">
+                Try Assessment Tool <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
+              </Link>
+            </div>
+          </div>
+          <div className="text-center mt-12">
+            <Link to="/tools/roi-calculator" className="inline-flex items-center justify-center px-8 py-4 text-lg font-bold rounded-xl text-white bg-primary hover:bg-secondary transition-all shadow-xl hover:-translate-y-1">
+              {t('tools_teaser.cta')}
+              <ArrowRight className="ml-2 w-5 h-5" />
+            </Link>
           </div>
         </div>
       </section>

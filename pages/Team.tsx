@@ -1,6 +1,7 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import SEO from '../components/SEO';
+import OptimizedImage from '../components/OptimizedImage';
 
 const Team: React.FC = () => {
   const { t } = useTranslation();
@@ -34,7 +35,13 @@ const Team: React.FC = () => {
                 {team.map((member, i) => (
                     <div key={i} className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 group border border-slate-100">
                         <div className="h-96 overflow-hidden relative">
-                            <img src={member.img} alt={member.name} className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500" />
+                            <OptimizedImage 
+                              src={member.img} 
+                              alt={member.name} 
+                              className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
+                              width={400}
+                              height={600}
+                            />
                             <div className="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
                                 <div className="text-white transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
                                     <p className="font-bold text-lg">{member.role}</p>
